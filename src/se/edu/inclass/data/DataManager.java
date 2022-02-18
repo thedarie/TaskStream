@@ -58,7 +58,7 @@ public class DataManager {
             ArrayList<String> dataItems = readFile();
             taskList = parse(dataItems);
         } catch (IOException e) {
-            e.printStackTrace();
+            e.printStackTrace(); // bad practice
         }
         return taskList;
     }
